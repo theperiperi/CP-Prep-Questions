@@ -1,7 +1,7 @@
 class Solution:
     def maximumGain(self, s: str, x: int, y: int) -> int:
-        total_score=0
-        high_priority_pair="ab" if x>y else "ba"
+        total_score = 0
+        high_priority_pair = "ab" if x > y else "ba"
         low_priority_pair = "ba" if high_priority_pair == "ab" else "ab"
 
         # First pass: remove high priority pair
@@ -40,4 +40,4 @@ class Solution:
                 char_stack.append(current_char)
 
         # Reconstruct the remaining string after removing target pairs
-        return "".join(char_stack)1717 
+        return "".join(char_stack)
