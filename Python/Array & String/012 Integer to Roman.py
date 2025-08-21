@@ -15,7 +15,3 @@ class Solution:
                 ans+=mapping[n]
                 num-=n
         return ans
-
-
-
-        
